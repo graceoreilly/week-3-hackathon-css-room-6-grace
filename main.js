@@ -15,7 +15,13 @@ const imageURL = URL.createObjectURL(blob); //created a URL which points to the 
 const img = document.createElement("img"); //creates a new img element
 img.src = imageURL; //sets the image src attribute of img element to the imageURL
 img.alt = "Random Cat"; //sets the alt attribute of the image
+// img.id = "catImage";
 document.body.appendChild(img); //appends the image to the body, you have to append an element in order to add the element to the DOM
+
+// let newImage = document.getElementById("catImage");
+// if (newImage) {
+//     newImage.remove();
+//  }
 
 return blob;
 }
@@ -26,4 +32,11 @@ catch (error) { //this is the block of code to be executed, if an error occurs i
 
 CatGenerator();
 
-document.img.style
+//grab the button from the HTML
+const button = document.getElementById("btn");
+//running the function when the button is clicked and adding a new image each time
+button.addEventListener("click", CatGenerator);
+// we need to say if there is already an image there, remove this image
+
+
+
