@@ -25,3 +25,5 @@ catch (error) { //this is the block of code to be executed, if an error occurs i
 }
 
 CatGenerator();
+
+document.img.style
