@@ -12,16 +12,16 @@ const blob = await response.blob(); //converts the response to a blob (binary im
 
 const imageURL = URL.createObjectURL(blob); //created a URL which points to the blob object, allowing it to be displayed as an image in the browser
 
+let newImage = document.getElementById("catImage");
+if (newImage) {
+    newImage.remove(); //deleting the image so that the page is not full of images of cats
+ }
+
 const img = document.createElement("img"); //creates a new img element
 img.src = imageURL; //sets the image src attribute of img element to the imageURL
 img.alt = "Random Cat"; //sets the alt attribute of the image
-// img.id = "catImage";
+img.id = "catImage";
 document.body.appendChild(img); //appends the image to the body, you have to append an element in order to add the element to the DOM
-
-// let newImage = document.getElementById("catImage");
-// if (newImage) {
-//     newImage.remove();
-//  }
 
 return blob;
 }
@@ -40,3 +40,8 @@ button.addEventListener("click", CatGenerator);
 
 
 
+// Remove the existing image before appending a new one: You can check if there's an existing image using getElementById and remove it before appending the new image to the body. This way, only one image will be displayed at a time.
+
+// Order of operations matters: Make sure to remove the old image before you append the new image.
+
+// Unique identifiers help: Since you're assigning an id to the image (catImage), use that same id to target and remove the image consistently.
