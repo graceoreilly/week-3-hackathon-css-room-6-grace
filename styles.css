@@ -13,10 +13,10 @@ button {
 }
 
 img {
-    max-width: 70%;
+    max-width: 500px;
+    max-height: 500px;
     height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    margin: auto;
     padding-top: 10px;
   }
