@@ -1,4 +1,79 @@
+/* Universal Styles */
+body {
+    background-color: #eaeaea;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Heading Styling */
+h1 {
+    text-align: center;
+    font-weight: bold; 
+    color: #333;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; /* Adds spacing below the heading */
+}
+
+/* Image Styling */
 img {
+    border-radius: 15px;
+    max-width: 100%; /* Making the image responsive */
+    max-height: 500px; /* Keeps within bounds for large images */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Adds some spacing around images */
+    padding: 15px;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Button Styling */
+button {
+    background-color: #1a1a2e; 
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px; 
+    font-size: 16px; 
+    cursor: pointer;
+    margin: 20px auto;
+    display: block; /* Centers buttons */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #deb173;
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* img {
     border-radius: 25px;
     max-width: 500px;
     max-height: 500px;
@@ -21,9 +96,10 @@ button {
     color: #fff;
     border:none;
     border-radius:10px;
-    box-shadow: 0px 0px 10px 10px rgb(0,0,0);
-    margin-bottom: 50px;
-    margin-top: 20px;
+    /* box-shadow: 0px 0px 10px 10px rgb(0,0,0); */
+    /* padding: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
 }
 
 button:hover {
@@ -35,5 +111,5 @@ button:hover {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 0 0 3px #deb173, 0 0 5px #120f0a;
-}
+} */
 

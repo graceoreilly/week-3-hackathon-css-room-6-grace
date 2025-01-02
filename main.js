@@ -36,12 +36,3 @@ CatGenerator();
 const button = document.getElementById("btn");
 //running the function when the button is clicked and adding a new image each time
 button.addEventListener("click", CatGenerator);
-// we need to say if there is already an image there, remove this image
-
-
-
-// Remove the existing image before appending a new one: You can check if there's an existing image using getElementById and remove it before appending the new image to the body. This way, only one image will be displayed at a time.
-
-// Order of operations matters: Make sure to remove the old image before you append the new image.
-
-// Unique identifiers help: Since you're assigning an id to the image (catImage), use that same id to target and remove the image consistently.
